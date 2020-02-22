@@ -2,6 +2,8 @@
 
 This handyh little page will generate a password for you
 
+<img width="414" alt="image" src="https://user-images.githubusercontent.com/59762660/75091225-063d0c00-55bf-11ea-9413-0da4c69af034.png">
+
 ## Table of Contents
 
 - [Instructions](#Instructions) 
