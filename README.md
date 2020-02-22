@@ -21,6 +21,12 @@ You will be prompted for password length, then asked some basic questions about 
 - Numeric Characters
 - Special Characters
 
+Note, the password must meet the following criteria:
+
+- Must be at least 8 characters in length
+- Must be less than 128 characters in length
+- You need to chose at least ONE of the above five character sets to include
+
 ## Technology
 
 - HTML 5
