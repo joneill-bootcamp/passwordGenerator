@@ -50,21 +50,19 @@ function writePassword() {
 
 function generatePassword() {
   var length = passWordLength;   
-  var charsetUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  var charsetUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var charsetLoweCase = "abcdefghijklmnopqrstuvwxyz";
   var charsetNumeric = "1234567890";
-  var charsetSpecial =  " !#$%&'()*+,-./:;<=>?@[\]^_{|}~";
+  var charsetSpecial = " !#$%&'()*+,-./:;<=>?@[\]^_{|}~";
   var retVal = "";
+  var charset = "";
 
-    // Now, we build the final list of characters based on answers, then we pick 
-    // from this big list of characters as we generate the password
-
-    var charset = "";
-
-    if (includeUpperCase === true) charset += (charsetUpperCase);
-    if (includeLowerCase === true) charset += (charsetLoweCase);
-    if (includeNumerics === true)  charset += (charsetNumeric);
-    if (includeSpecial === true)   charset += (charsetSpecial);
+  // Now, we build the final list of characters based on answers, then we pick 
+  // from this big list of characters as we generate the password
+  if (includeUpperCase === true) charset += (charsetUpperCase);
+  if (includeLowerCase === true) charset += (charsetLoweCase);
+  if (includeNumerics === true)  charset += (charsetNumeric);
+  if (includeSpecial === true)   charset += (charsetSpecial);
 
   for (var i = 0, n = charset.length; i < length; ++i) {
       retVal += charset.charAt(Math.floor(Math.random() * n));
