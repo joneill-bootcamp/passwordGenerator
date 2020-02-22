@@ -4,9 +4,9 @@ This handyh little page will generate a password for you
 
 ## Table of Contents
 
-- [Instructions] (#Instructions) 
+- [Instructions](#Instructions) 
 - [Technology Used](#Technology)
-- [Team] {##Team)}
+- [Team](#Team)
 
 ## Instructions
 
